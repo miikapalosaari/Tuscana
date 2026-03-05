@@ -91,7 +91,8 @@ offset_right = 500.0
 offset_bottom = 350.0
 theme_override_font_sizes/font_size = 72
 text = "Maps:
-1 : Isla Grande
-2 : Isla Petit"
+1 : Isla Petit
+2 : Isla Grande
+"
 
 [connection signal="pressed" from="VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]

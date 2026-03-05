@@ -1,3 +1,560 @@
-[gd_scene format=3 uid="uid://faa5elnyqrko"]
+[gd_scene load_steps=4 format=3 uid="uid://faa5elnyqrko"]
+
+[ext_resource type="Texture2D" uid="uid://c6py4edk20x8r" path="res://petite-island1080.jpg" id="1_xm0ed"]
+[ext_resource type="Script" uid="uid://lnnll53gh2wj" path="res://main.gd" id="2_nqj10"]
+[ext_resource type="PackedScene" uid="uid://xwktfaih22d6" path="res://Clickable.tscn" id="3_s47np"]
 
 [node name="IslaPetit" type="Node2D"]
+
+[node name="MapRect" type="TextureRect" parent="."]
+texture_filter = 1
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+texture = ExtResource("1_xm0ed")
+
+[node name="DrawLayer" type="Node2D" parent="."]
+position = Vector2(-508, 109)
+script = ExtResource("2_nqj10")
+
+[node name="CitiesRoot" type="Node2D" parent="."]
+
+[node name="City1" type="Node2D" parent="CitiesRoot"]
+position = Vector2(684, 168)
+
+[node name="Label" type="Label" parent="CitiesRoot/City1"]
+texture_filter = 1
+custom_minimum_size = Vector2(75, 75)
+offset_left = -31.0
+offset_top = -32.0
+offset_right = 44.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="City2" type="Node2D" parent="CitiesRoot"]
+position = Vector2(1051, 256)
+
+[node name="Label" type="Label" parent="CitiesRoot/City2"]
+texture_filter = 1
+custom_minimum_size = Vector2(75, 75)
+offset_left = -31.0
+offset_top = -32.0
+offset_right = 44.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="City3" type="Node2D" parent="CitiesRoot"]
+position = Vector2(1197, 440)
+
+[node name="Label" type="Label" parent="CitiesRoot/City3"]
+texture_filter = 1
+custom_minimum_size = Vector2(75, 75)
+offset_left = -31.0
+offset_top = -32.0
+offset_right = 44.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="City4" type="Node2D" parent="CitiesRoot"]
+position = Vector2(1270, 723)
+
+[node name="Label" type="Label" parent="CitiesRoot/City4"]
+texture_filter = 1
+custom_minimum_size = Vector2(75, 75)
+offset_left = -31.0
+offset_top = -32.0
+offset_right = 44.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="City5" type="Node2D" parent="CitiesRoot"]
+position = Vector2(975, 904)
+
+[node name="Label" type="Label" parent="CitiesRoot/City5"]
+texture_filter = 1
+custom_minimum_size = Vector2(75, 75)
+offset_left = -31.0
+offset_top = -32.0
+offset_right = 44.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="City6" type="Node2D" parent="CitiesRoot"]
+position = Vector2(760, 993)
+
+[node name="Label" type="Label" parent="CitiesRoot/City6"]
+texture_filter = 1
+custom_minimum_size = Vector2(75, 75)
+offset_left = -31.0
+offset_top = -32.0
+offset_right = 44.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="City7" type="Node2D" parent="CitiesRoot"]
+position = Vector2(393, 904)
+
+[node name="Label" type="Label" parent="CitiesRoot/City7"]
+texture_filter = 1
+custom_minimum_size = Vector2(75, 75)
+offset_left = -31.0
+offset_top = -32.0
+offset_right = 44.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="City8" type="Node2D" parent="CitiesRoot"]
+position = Vector2(249, 724)
+
+[node name="Label" type="Label" parent="CitiesRoot/City8"]
+texture_filter = 1
+custom_minimum_size = Vector2(75, 75)
+offset_left = -31.0
+offset_top = -32.0
+offset_right = 44.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="City9" type="Node2D" parent="CitiesRoot"]
+position = Vector2(180, 444)
+
+[node name="Label" type="Label" parent="CitiesRoot/City9"]
+texture_filter = 1
+custom_minimum_size = Vector2(75, 75)
+offset_left = -31.0
+offset_top = -32.0
+offset_right = 44.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="City10" type="Node2D" parent="CitiesRoot"]
+position = Vector2(321, 260)
+
+[node name="Label" type="Label" parent="CitiesRoot/City10"]
+texture_filter = 1
+custom_minimum_size = Vector2(75, 75)
+offset_left = -31.0
+offset_top = -32.0
+offset_right = 44.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel" type="Panel" parent="."]
+custom_minimum_size = Vector2(240, 100)
+offset_right = 240.0
+offset_bottom = 100.0
+
+[node name="ModeContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 0
+offset_right = 200.0
+offset_bottom = 102.0
+
+[node name="Label" type="Label" parent="Panel/ModeContainer"]
+texture_filter = 1
+custom_minimum_size = Vector2(240, 100)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "SET SCORES"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ToggleMode" type="Button" parent="Panel/ModeContainer"]
+custom_minimum_size = Vector2(240, 100)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "TOGGLE MODE"
+
+[node name="LineButtonContainer" type="HBoxContainer" parent="."]
+offset_left = 345.0
+offset_right = 829.0
+offset_bottom = 120.0
+
+[node name="UndoButton" type="Button" parent="LineButtonContainer"]
+custom_minimum_size = Vector2(240, 120)
+layout_mode = 2
+text = "UNDO"
+
+[node name="ScoreButtonContainer" type="VBoxContainer" parent="."]
+offset_left = 345.0
+offset_right = 585.0
+offset_bottom = 120.0
+mouse_filter = 2
+
+[node name="ApplyScoresButton" type="Button" parent="ScoreButtonContainer"]
+custom_minimum_size = Vector2(240, 120)
+layout_mode = 2
+text = "APPLY SCORES"
+
+[node name="ClickablesRoot" type="Node2D" parent="."]
+
+[node name="CityClickables" type="Node2D" parent="ClickablesRoot"]
+
+[node name="Clickable" parent="ClickablesRoot/CityClickables" instance=ExtResource("3_s47np")]
+position = Vector2(1846, 457)
+rect_size = Vector2(64, 52)
+
+[node name="Clickable2" parent="ClickablesRoot/CityClickables" instance=ExtResource("3_s47np")]
+position = Vector2(1846, 510)
+rect_size = Vector2(64, 52)
+
+[node name="Clickable3" parent="ClickablesRoot/CityClickables" instance=ExtResource("3_s47np")]
+position = Vector2(1846, 563)
+rect_size = Vector2(64, 52)
+
+[node name="Clickable4" parent="ClickablesRoot/CityClickables" instance=ExtResource("3_s47np")]
+position = Vector2(1627, 510)
+rect_size = Vector2(64, 52)
+
+[node name="Clickable5" parent="ClickablesRoot/CityClickables" instance=ExtResource("3_s47np")]
+position = Vector2(1627, 563)
+rect_size = Vector2(64, 52)
+
+[node name="SigthClickables" type="Node2D" parent="ClickablesRoot"]
+
+[node name="Clickable2" parent="ClickablesRoot/SigthClickables" instance=ExtResource("3_s47np")]
+position = Vector2(1588, 75)
+rect_size = Vector2(64, 64)
+
+[node name="Clickable3" parent="ClickablesRoot/SigthClickables" instance=ExtResource("3_s47np")]
+position = Vector2(1715, 75)
+rect_size = Vector2(144, 64)
+
+[node name="Clickable5" parent="ClickablesRoot/SigthClickables" instance=ExtResource("3_s47np")]
+position = Vector2(1588, 140)
+rect_size = Vector2(64, 64)
+
+[node name="Clickable6" parent="ClickablesRoot/SigthClickables" instance=ExtResource("3_s47np")]
+position = Vector2(1715, 140)
+rect_size = Vector2(144, 64)
+
+[node name="Clickable8" parent="ClickablesRoot/SigthClickables" instance=ExtResource("3_s47np")]
+position = Vector2(1588, 205)
+rect_size = Vector2(64, 64)
+
+[node name="Clickable9" parent="ClickablesRoot/SigthClickables" instance=ExtResource("3_s47np")]
+position = Vector2(1715, 205)
+rect_size = Vector2(144, 64)
+
+[node name="Clickable11" parent="ClickablesRoot/SigthClickables" instance=ExtResource("3_s47np")]
+position = Vector2(1588, 265)
+rect_size = Vector2(64, 64)
+
+[node name="Clickable12" parent="ClickablesRoot/SigthClickables" instance=ExtResource("3_s47np")]
+position = Vector2(1715, 265)
+rect_size = Vector2(144, 64)
+
+[node name="Clickable14" parent="ClickablesRoot/SigthClickables" instance=ExtResource("3_s47np")]
+position = Vector2(1588, 330)
+rect_size = Vector2(64, 64)
+
+[node name="Clickable15" parent="ClickablesRoot/SigthClickables" instance=ExtResource("3_s47np")]
+position = Vector2(1715, 330)
+rect_size = Vector2(144, 64)
+
+[node name="ScoresRoot" type="Node2D" parent="."]
+position = Vector2(1486, 674)
+
+[node name="Score1" type="Node2D" parent="ScoresRoot"]
+position = Vector2(14, 3)
+
+[node name="Label" type="Label" parent="ScoresRoot/Score1"]
+texture_filter = 1
+custom_minimum_size = Vector2(64, 64)
+offset_left = -13.0
+offset_top = -24.0
+offset_right = 69.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="ScoresRoot/Score1"]
+custom_minimum_size = Vector2(64, 64)
+offset_left = -21.0
+offset_top = -22.0
+offset_right = 79.0
+offset_bottom = 42.0
+theme_override_font_sizes/font_size = 24
+alignment = 1
+max_length = 3
+
+[node name="Score2" type="Node2D" parent="ScoresRoot"]
+position = Vector2(121, 3)
+
+[node name="Label" type="Label" parent="ScoresRoot/Score2"]
+texture_filter = 1
+custom_minimum_size = Vector2(64, 64)
+offset_left = -13.0
+offset_top = -24.0
+offset_right = 69.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="ScoresRoot/Score2"]
+custom_minimum_size = Vector2(64, 64)
+offset_left = -21.0
+offset_top = -22.0
+offset_right = 79.0
+offset_bottom = 42.0
+theme_override_font_sizes/font_size = 24
+alignment = 1
+max_length = 3
+
+[node name="Score3" type="Node2D" parent="ScoresRoot"]
+position = Vector2(15, 92)
+
+[node name="Label" type="Label" parent="ScoresRoot/Score3"]
+texture_filter = 1
+custom_minimum_size = Vector2(64, 64)
+offset_left = -13.0
+offset_top = -24.0
+offset_right = 69.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="ScoresRoot/Score3"]
+custom_minimum_size = Vector2(64, 64)
+offset_left = -21.0
+offset_top = -22.0
+offset_right = 79.0
+offset_bottom = 42.0
+theme_override_font_sizes/font_size = 24
+alignment = 1
+max_length = 3
+
+[node name="Score4" type="Node2D" parent="ScoresRoot"]
+position = Vector2(15, 181)
+
+[node name="Label" type="Label" parent="ScoresRoot/Score4"]
+texture_filter = 1
+custom_minimum_size = Vector2(64, 64)
+offset_left = -13.0
+offset_top = -24.0
+offset_right = 69.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="ScoresRoot/Score4"]
+custom_minimum_size = Vector2(64, 64)
+offset_left = -21.0
+offset_top = -22.0
+offset_right = 79.0
+offset_bottom = 42.0
+theme_override_font_sizes/font_size = 24
+alignment = 1
+max_length = 3
+
+[node name="Score5" type="Node2D" parent="ScoresRoot"]
+position = Vector2(123, 92)
+
+[node name="Label" type="Label" parent="ScoresRoot/Score5"]
+texture_filter = 1
+custom_minimum_size = Vector2(64, 64)
+offset_left = -13.0
+offset_top = -24.0
+offset_right = 69.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="ScoresRoot/Score5"]
+custom_minimum_size = Vector2(64, 64)
+offset_left = -21.0
+offset_top = -22.0
+offset_right = 79.0
+offset_bottom = 42.0
+theme_override_font_sizes/font_size = 24
+alignment = 1
+max_length = 3
+
+[node name="Score6" type="Node2D" parent="ScoresRoot"]
+position = Vector2(120, 182)
+
+[node name="Label" type="Label" parent="ScoresRoot/Score6"]
+texture_filter = 1
+custom_minimum_size = Vector2(64, 64)
+offset_left = -13.0
+offset_top = -24.0
+offset_right = 69.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="ScoresRoot/Score6"]
+custom_minimum_size = Vector2(64, 64)
+offset_left = -21.0
+offset_top = -22.0
+offset_right = 79.0
+offset_bottom = 42.0
+theme_override_font_sizes/font_size = 24
+alignment = 1
+max_length = 3
+
+[node name="Score8" type="Node2D" parent="ScoresRoot"]
+position = Vector2(316, 41)
+
+[node name="Label" type="Label" parent="ScoresRoot/Score8"]
+texture_filter = 1
+custom_minimum_size = Vector2(64, 64)
+offset_left = -13.0
+offset_top = -24.0
+offset_right = 69.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="ScoresRoot/Score8"]
+custom_minimum_size = Vector2(64, 64)
+offset_left = -21.0
+offset_top = -22.0
+offset_right = 79.0
+offset_bottom = 42.0
+theme_override_font_sizes/font_size = 24
+alignment = 1
+max_length = 3
+
+[node name="Score9" type="Node2D" parent="ScoresRoot"]
+position = Vector2(316, 115)
+
+[node name="Label" type="Label" parent="ScoresRoot/Score9"]
+texture_filter = 1
+custom_minimum_size = Vector2(64, 64)
+offset_left = -13.0
+offset_top = -24.0
+offset_right = 69.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="ScoresRoot/Score9"]
+custom_minimum_size = Vector2(64, 64)
+offset_left = -21.0
+offset_top = -22.0
+offset_right = 79.0
+offset_bottom = 42.0
+theme_override_font_sizes/font_size = 24
+alignment = 1
+max_length = 3
+
+[node name="Score10" type="Node2D" parent="ScoresRoot"]
+position = Vector2(316, 188)
+
+[node name="Label" type="Label" parent="ScoresRoot/Score10"]
+texture_filter = 1
+custom_minimum_size = Vector2(64, 64)
+offset_left = -13.0
+offset_top = -24.0
+offset_right = 69.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="ScoresRoot/Score10"]
+custom_minimum_size = Vector2(64, 64)
+offset_left = -21.0
+offset_top = -22.0
+offset_right = 79.0
+offset_bottom = 42.0
+theme_override_font_sizes/font_size = 24
+alignment = 1
+max_length = 3
+
+[node name="Score11" type="Node2D" parent="ScoresRoot"]
+position = Vector2(316, 262)
+
+[node name="Label" type="Label" parent="ScoresRoot/Score11"]
+texture_filter = 1
+custom_minimum_size = Vector2(64, 64)
+offset_left = -13.0
+offset_top = -24.0
+offset_right = 69.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="ScoresRoot/Score11"]
+custom_minimum_size = Vector2(64, 64)
+offset_left = -21.0
+offset_top = -22.0
+offset_right = 79.0
+offset_bottom = 42.0
+theme_override_font_sizes/font_size = 24
+alignment = 1
+max_length = 3
+
+[node name="Score12" type="Node2D" parent="ScoresRoot"]
+position = Vector2(316, 336)
+
+[node name="Label" type="Label" parent="ScoresRoot/Score12"]
+texture_filter = 1
+custom_minimum_size = Vector2(64, 64)
+offset_left = -13.0
+offset_top = -24.0
+offset_right = 69.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="ScoresRoot/Score12"]
+custom_minimum_size = Vector2(64, 64)
+offset_left = -21.0
+offset_top = -22.0
+offset_right = 79.0
+offset_bottom = 42.0
+theme_override_font_sizes/font_size = 24
+alignment = 1
+max_length = 3
