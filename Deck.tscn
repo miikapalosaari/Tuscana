@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhmeei0qatud7"]
+
+[ext_resource type="Script" uid="uid://dxk3lho005awc" path="res://deck.gd" id="1_2qa5t"]
+[ext_resource type="Texture2D" uid="uid://bh0mtfelw0prk" path="res://empty256.png" id="1_pyaef"]
+
+[node name="Deck" type="Button"]
+custom_minimum_size = Vector2(204.8, 102.4)
+script = ExtResource("1_2qa5t")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.4, 0.4)
+
+[node name="LeftCard" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_pyaef")
+
+[node name="RightCard" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_pyaef")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

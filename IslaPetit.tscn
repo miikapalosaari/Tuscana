@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://faa5elnyqrko"]
+[gd_scene load_steps=5 format=3 uid="uid://faa5elnyqrko"]
 
 [ext_resource type="Texture2D" uid="uid://c6py4edk20x8r" path="res://petite-island1080.jpg" id="1_xm0ed"]
 [ext_resource type="Script" uid="uid://lnnll53gh2wj" path="res://main.gd" id="2_nqj10"]
 [ext_resource type="PackedScene" uid="uid://xwktfaih22d6" path="res://Clickable.tscn" id="3_s47np"]
+[ext_resource type="PackedScene" uid="uid://bhmeei0qatud7" path="res://Deck.tscn" id="4_nqj10"]
 
 [node name="IslaPetit" type="Node2D"]
 
@@ -558,3 +559,8 @@ offset_bottom = 42.0
 theme_override_font_sizes/font_size = 24
 alignment = 1
 max_length = 3
+
+[node name="Deck" parent="." instance=ExtResource("4_nqj10")]
+offset_left = 720.0
+offset_right = 728.0
+offset_bottom = 8.0

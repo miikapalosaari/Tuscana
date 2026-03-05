@@ -11,6 +11,7 @@ extends Node2D
 
 @onready var modeButton: Button = $"../Panel/ModeContainer/ToggleMode"
 @onready var modeLabel: Label = $"../Panel/ModeContainer/Label"
+@onready var deckButton: Button = $"../Deck"
 
 # --- Drawing settings ---
 @export var canDraw := true
@@ -148,7 +149,7 @@ func _input(event):
 		return
 
 	# Block UI clicks
-	for b in [undoButton, modeButton, scoreApplyButton]:
+	for b in [undoButton, modeButton, scoreApplyButton, deckButton]:
 		if b.get_global_rect().has_point(pos):
 			return
 
@@ -162,9 +163,13 @@ func _input(event):
 		else:
 			if isDrawing:
 				var endPoint = to_local(pos)
-				permanentLines.append([startPoint, endPoint])
+				var distance = startPoint.distance_to(endPoint)
+
+				if distance >= 20.0:
+					permanentLines.append([startPoint, endPoint])
 				isDrawing = false
 				queue_redraw()
+
 
 	# Mouse drag preview
 	if event is InputEventMouseMotion and isDrawing:

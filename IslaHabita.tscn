@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bfa1uohxbuuxn"]
+[gd_scene load_steps=5 format=3 uid="uid://bfa1uohxbuuxn"]
 
 [ext_resource type="Texture2D" uid="uid://bqpv04clayta8" path="res://isla-habita1080.jpg" id="1_jtgbf"]
 [ext_resource type="Script" uid="uid://lnnll53gh2wj" path="res://main.gd" id="2_rshh2"]
 [ext_resource type="PackedScene" uid="uid://xwktfaih22d6" path="res://Clickable.tscn" id="3_t702j"]
+[ext_resource type="PackedScene" uid="uid://bhmeei0qatud7" path="res://Deck.tscn" id="4_rshh2"]
 
 [node name="IslaHabita" type="Node2D"]
 
@@ -657,3 +658,8 @@ theme_override_font_sizes/font_size = 24
 alignment = 1
 max_length = 3
 metadata/_edit_use_anchors_ = true
+
+[node name="Deck" parent="." instance=ExtResource("4_rshh2")]
+offset_left = 845.0
+offset_right = 1049.8
+offset_bottom = 102.4
