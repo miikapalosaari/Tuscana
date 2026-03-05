@@ -3,6 +3,7 @@ extends Control
 @onready var playerSelect: LineEdit = $VBoxContainer/Player/LineEdit
 @onready var randomSeedSelect: LineEdit = $VBoxContainer/RandomSeed/LineEdit
 @onready var mapSelect: LineEdit = $VBoxContainer/Map/LineEdit
+@onready var toggleHostButton: Button = $VBoxContainer/Host/HostToggleButton
 
 # playerSelect (1 - 8) player index
 # randomSeedSelect 10 digit number
@@ -69,3 +70,11 @@ func randomCityOrder() -> void:
 	print("newCityStr: ", newCityStr)
 
 	Global.cityOrder = newCityStr
+
+
+func _on_host_toggle_button_toggled(toggled_on: bool) -> void:
+	Global.isHost = toggled_on
+	if toggled_on:
+		toggleHostButton.text = "TRUE"
+	else:
+		toggleHostButton.text = "FALSE"

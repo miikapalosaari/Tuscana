@@ -180,51 +180,18 @@ horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="Panel" type="Panel" parent="."]
-custom_minimum_size = Vector2(240, 100)
-offset_right = 240.0
-offset_bottom = 100.0
-
-[node name="ModeContainer" type="VBoxContainer" parent="Panel"]
-layout_mode = 0
-offset_right = 200.0
-offset_bottom = 102.0
-
-[node name="Label" type="Label" parent="Panel/ModeContainer"]
-texture_filter = 1
-custom_minimum_size = Vector2(240, 100)
-layout_mode = 2
-theme_override_font_sizes/font_size = 32
-text = "SET SCORES"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="ToggleMode" type="Button" parent="Panel/ModeContainer"]
-custom_minimum_size = Vector2(240, 100)
-layout_mode = 2
-theme_override_font_sizes/font_size = 32
-text = "TOGGLE MODE"
-
 [node name="LineButtonContainer" type="HBoxContainer" parent="."]
-offset_left = 345.0
-offset_right = 829.0
-offset_bottom = 120.0
+texture_filter = 1
+custom_minimum_size = Vector2(102.4, 102.4)
+offset_left = 478.0
+offset_right = 682.0
+offset_bottom = 102.4
 
 [node name="UndoButton" type="Button" parent="LineButtonContainer"]
-custom_minimum_size = Vector2(240, 120)
+custom_minimum_size = Vector2(204.8, 102.4)
 layout_mode = 2
+theme_override_font_sizes/font_size = 64
 text = "UNDO"
-
-[node name="ScoreButtonContainer" type="VBoxContainer" parent="."]
-offset_left = 345.0
-offset_right = 585.0
-offset_bottom = 120.0
-mouse_filter = 2
-
-[node name="ApplyScoresButton" type="Button" parent="ScoreButtonContainer"]
-custom_minimum_size = Vector2(240, 120)
-layout_mode = 2
-text = "APPLY SCORES"
 
 [node name="ClickablesRoot" type="Node2D" parent="."]
 
@@ -337,9 +304,11 @@ offset_left = -21.0
 offset_top = -22.0
 offset_right = 79.0
 offset_bottom = 42.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 24
 alignment = 1
 max_length = 3
+flat = true
 metadata/_edit_use_anchors_ = true
 
 [node name="Score2" type="Node2D" parent="ScoresRoot"]
@@ -364,9 +333,11 @@ offset_left = -21.0
 offset_top = -22.0
 offset_right = 79.0
 offset_bottom = 42.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 24
 alignment = 1
 max_length = 3
+flat = true
 metadata/_edit_use_anchors_ = true
 
 [node name="Score3" type="Node2D" parent="ScoresRoot"]
@@ -391,9 +362,11 @@ offset_left = -21.0
 offset_top = -22.0
 offset_right = 79.0
 offset_bottom = 42.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 24
 alignment = 1
 max_length = 3
+flat = true
 metadata/_edit_use_anchors_ = true
 
 [node name="Score4" type="Node2D" parent="ScoresRoot"]
@@ -418,9 +391,11 @@ offset_left = -21.0
 offset_top = -22.0
 offset_right = 79.0
 offset_bottom = 42.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 24
 alignment = 1
 max_length = 3
+flat = true
 metadata/_edit_use_anchors_ = true
 
 [node name="Score5" type="Node2D" parent="ScoresRoot"]
@@ -445,9 +420,11 @@ offset_left = -21.0
 offset_top = -22.0
 offset_right = 79.0
 offset_bottom = 42.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 24
 alignment = 1
 max_length = 3
+flat = true
 metadata/_edit_use_anchors_ = true
 
 [node name="Score6" type="Node2D" parent="ScoresRoot"]
@@ -472,9 +449,11 @@ offset_left = -21.0
 offset_top = -22.0
 offset_right = 79.0
 offset_bottom = 42.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 24
 alignment = 1
 max_length = 3
+flat = true
 metadata/_edit_use_anchors_ = true
 
 [node name="Score8" type="Node2D" parent="ScoresRoot"]
@@ -499,9 +478,11 @@ offset_left = -21.0
 offset_top = -22.0
 offset_right = 79.0
 offset_bottom = 42.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 24
 alignment = 1
 max_length = 3
+flat = true
 metadata/_edit_use_anchors_ = true
 
 [node name="Score9" type="Node2D" parent="ScoresRoot"]
@@ -526,9 +507,11 @@ offset_left = -21.0
 offset_top = -22.0
 offset_right = 79.0
 offset_bottom = 42.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 24
 alignment = 1
 max_length = 3
+flat = true
 metadata/_edit_use_anchors_ = true
 
 [node name="Score10" type="Node2D" parent="ScoresRoot"]
@@ -553,9 +536,11 @@ offset_left = -21.0
 offset_top = -22.0
 offset_right = 79.0
 offset_bottom = 42.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 24
 alignment = 1
 max_length = 3
+flat = true
 metadata/_edit_use_anchors_ = true
 
 [node name="Score11" type="Node2D" parent="ScoresRoot"]
@@ -580,9 +565,11 @@ offset_left = -21.0
 offset_top = -22.0
 offset_right = 79.0
 offset_bottom = 42.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 24
 alignment = 1
 max_length = 3
+flat = true
 metadata/_edit_use_anchors_ = true
 
 [node name="Score12" type="Node2D" parent="ScoresRoot"]
@@ -607,12 +594,15 @@ offset_left = -21.0
 offset_top = -22.0
 offset_right = 79.0
 offset_bottom = 42.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 24
 alignment = 1
 max_length = 3
+flat = true
 metadata/_edit_use_anchors_ = true
 
 [node name="Deck" parent="." instance=ExtResource("4_xa3n8")]
-offset_left = 627.0
-offset_right = 831.8
+texture_filter = 1
+offset_left = 683.0
+offset_right = 887.8
 offset_bottom = 102.4

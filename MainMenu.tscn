@@ -38,9 +38,10 @@ theme_override_font_sizes/font_size = 64
 text = "Player (1 - 8):"
 
 [node name="LineEdit" type="LineEdit" parent="VBoxContainer/Player"]
-custom_minimum_size = Vector2(300, 100)
+custom_minimum_size = Vector2(400, 100)
 layout_mode = 2
-theme_override_font_sizes/font_size = 48
+theme_override_font_sizes/font_size = 64
+alignment = 1
 max_length = 2
 
 [node name="RandomSeed" type="HBoxContainer" parent="VBoxContainer"]
@@ -54,9 +55,9 @@ theme_override_font_sizes/font_size = 64
 text = "Random seed:"
 
 [node name="LineEdit" type="LineEdit" parent="VBoxContainer/RandomSeed"]
-custom_minimum_size = Vector2(300, 100)
+custom_minimum_size = Vector2(400, 100)
 layout_mode = 2
-theme_override_font_sizes/font_size = 48
+theme_override_font_sizes/font_size = 64
 alignment = 1
 max_length = 10
 
@@ -71,19 +72,36 @@ theme_override_font_sizes/font_size = 64
 text = "Map (1 - 4):"
 
 [node name="LineEdit" type="LineEdit" parent="VBoxContainer/Map"]
-custom_minimum_size = Vector2(300, 100)
+custom_minimum_size = Vector2(400, 100)
 layout_mode = 2
-theme_override_font_sizes/font_size = 48
+theme_override_font_sizes/font_size = 64
 alignment = 1
 max_length = 1
 
+[node name="Host" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(400, 100)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Host"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 64
+text = "Host (TRUE/FALSE):"
+
+[node name="HostToggleButton" type="Button" parent="VBoxContainer/Host"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+toggle_mode = true
+text = "FALSE"
+
 [node name="Panel" type="Panel" parent="."]
-custom_minimum_size = Vector2(500, 350)
+custom_minimum_size = Vector2(500, 500)
 layout_mode = 0
-offset_left = 1324.0
+offset_left = 1365.0
 offset_top = 490.0
-offset_right = 1824.0
-offset_bottom = 840.0
+offset_right = 1865.0
+offset_bottom = 990.0
 
 [node name="Label" type="Label" parent="Panel"]
 custom_minimum_size = Vector2(500, 350)
@@ -98,3 +116,4 @@ text = "Maps:
 4 : Isla Habita"
 
 [connection signal="pressed" from="VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="toggled" from="VBoxContainer/Host/HostToggleButton" to="." method="_on_host_toggle_button_toggled"]

@@ -3,6 +3,7 @@ extends Button
 
 @onready var leftCard : TextureRect = $HBoxContainer/LeftCard
 @onready var rightCard : TextureRect = $HBoxContainer/RightCard 
+@onready var pairsLeft : Label = $PairsLeft
 
 enum Terrain {
 	EMPTY,
@@ -45,6 +46,7 @@ func make_pairs():
 	for i in range(0, 26, 2):
 		pairs.append([deck[i], deck[i+1]])
 	pairIndex = 0
+	_update_pairs_left()
 
 func _ready():
 	build_deck()
@@ -62,6 +64,7 @@ func _on_pressed() -> void:
 		rightCard.texture = textures[rightType]
 
 		pairIndex += 1
+		_update_pairs_left()
 	else:
 		# Show empty cards
 		leftCard.texture = textures[Terrain.EMPTY]
@@ -70,3 +73,7 @@ func _on_pressed() -> void:
 		# Rebuild deck and reshuffle for next cycle
 		build_deck()
 		make_pairs()
+
+func _update_pairs_left():
+	var remaining = pairs.size() - pairIndex
+	pairsLeft.text = "PAIRS LEFT: " + str(remaining)
