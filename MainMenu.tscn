@@ -40,6 +40,7 @@ text = "Player (1 - 8):"
 [node name="LineEdit" type="LineEdit" parent="VBoxContainer/Player"]
 custom_minimum_size = Vector2(300, 100)
 layout_mode = 2
+theme_override_font_sizes/font_size = 48
 max_length = 2
 
 [node name="RandomSeed" type="HBoxContainer" parent="VBoxContainer"]
@@ -67,7 +68,7 @@ layout_mode = 2
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 64
-text = "Map (1 - 2):"
+text = "Map (1 - 4):"
 
 [node name="LineEdit" type="LineEdit" parent="VBoxContainer/Map"]
 custom_minimum_size = Vector2(300, 100)
@@ -93,6 +94,7 @@ theme_override_font_sizes/font_size = 72
 text = "Maps:
 1 : Isla Petit
 2 : Isla Grande
-"
+3 : Isla Bahia
+4 : Isla Habita"
 
 [connection signal="pressed" from="VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]

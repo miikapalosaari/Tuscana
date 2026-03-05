@@ -26,7 +26,9 @@ var cityOrders : Array[String] = [
 
 var scenePaths: Array[String] = [
 	"res://IslaPetit.tscn",
-	"res://IslaGrande.tscn"
+	"res://IslaGrande.tscn",
+	"res://IslaBahia.tscn",
+	"res://IslaHabita.tscn"
 ]
 
 var selectedScene: String = ""
